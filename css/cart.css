@@ -1,0 +1,234 @@
+.cart-wrapper-icon {
+    position       : fixed;
+    width          : 70px;
+    height         : 70px;
+    border-radius  : 50%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    border         : 0.2px solid #ccc;
+    z-index        : 998;
+    bottom         : 110px;
+    right          : 20px;
+    cursor         : pointer;
+}
+
+.cart-wrapper-icon img {
+    width        : 80%;
+    height       : 80%;
+    object-fit   : cover;
+    border-radius: 50%;
+}
+
+.cart-wrapper-icon .jsx-count-cart {
+    position        : absolute;
+    width           : 30px;
+    height          : 30px;
+    border-radius   : 50%;
+    background-color: #50af00;
+    color           : #fff;
+    display         : inline-flex;
+    justify-content : center;
+    align-items     : center;
+    font-size       : 12px;
+    left            : -6px;
+}
+
+.cart-wrapper-icon:hover {
+    opacity: 0.8;
+}
+
+.store-wrapper .cart-detail {
+    position : fixed;
+    width    : 100vw;
+    right    : 0;
+    height   : 100vh;
+    top      : 0;
+    bottom   : 0;
+    z-index  : 999999999;
+    transform: translateX(100%);
+}
+
+.store-wrapper .cart-detail .overlay-cart {
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index         : 1;
+    display         : none;
+}
+
+.store-wrapper .cart-detail .cart-wrapper {
+    background-color: #fff;
+    overflow        : auto;
+    transform       : translateX(100%);
+    opacity         : 0;
+    transition      : all linear 0.4s;
+    position        : absolute;
+    z-index         : 99999999999999;
+    width           : 80%;
+    height          : 100%;
+    right           : 0;
+    top             : 0;
+    bottom          : 0;
+}
+
+.store-wrapper .cart-detail .cart-wrapper.active {
+    transform: translateX(0);
+    opacity  : 1;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .nav-jsx-cart span {
+    font-size: 13px;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .nav-jsx-cart .home-jsx-cart {
+    user-select: none;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .nav-jsx-cart .home-jsx-cart:hover {
+    text-decoration: underline;
+    cursor         : pointer;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .header-cart {
+    height          : 60px;
+    background-color: #f8f9fa;
+    border-radius   : 1px;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item {
+    height         : 100px;
+    display        : inline-flex;
+    justify-content: center;
+    overflow       : hidden;
+    flex-direction : column;
+    margin         : 10px 0;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .row {
+    height: 90%;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .introduce {
+    display    : flex;
+    align-items: center;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .introduce .image {
+    background-image   : url("https://t004.gokisoft.com/uploads/2021/07/p-7537-ao-polo-nam.jpg");
+    background-position: center center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    width              : 80px;
+    height             : 100%;
+    margin-right       : 8px;
+    flex-shrink        : 0;
+    border-radius      : 2px;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .introduce p {
+    padding           : 0;
+    margin            : 0;
+    font-size         : 15px;
+    display           : -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow          : hidden;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .introduce p:hover {
+    text-decoration: underline;
+    cursor         : pointer;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .introduce span {
+    font-size: 12px;
+    color    : #868e96 !important;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .count-pro {
+    display        : inline-flex;
+    justify-content: center;
+    overflow       : hidden;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .count-pro input {
+    height    : 30px;
+    width     : 40px;
+    max-width : 50px;
+    text-align: center;
+    border    : 0.1px solid #eee;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .jsx-render-pro .item .count-pro button {
+    border   : none;
+    outline  : none;
+    height   : 30px;
+    width    : 40px;
+    max-width: 50px;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart {
+    padding         : 14px 18px;
+    background-color: #f8f9fa;
+    border-radius   : 2px;
+    font-family     : Arial, Helvetica, sans-serif !important;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart .title-cart {
+    padding: 6px 0;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart .math-price {
+    font-size: 13px;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart .jsx-chuk-extend,
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart .price-thue,
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart .price-vc,
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart .price {
+    padding        : 10px 0;
+    display        : flex;
+    justify-content: space-between;
+    font-size      : 14px;
+    border-bottom  : 1px solid #eee;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .detail-cart .sd-total {
+    border-color: transparent;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .checkout-ds span {
+    color      : #868e96 !important;
+    font-size  : 13px;
+    font-weight: 600;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .checkout-ds span svg {
+    margin-right: 4px;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .checkout-ds span:hover {
+    text-decoration: underline;
+    cursor         : pointer;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .checkout-ds button {
+    font-size: 14px;
+}
+
+.store-wrapper .cart-detail .cart-wrapper .jsx-chuk .body-jsx .checkout-ds button svg {
+    margin-left: 4px;
+}
+
+.store-wrapper .customize-jsx-format input {
+    border          : none;
+    outline         : none;
+    text-align      : end;
+    background-color: transparent;
+}
+
+.store-wrapper .customize-jsx-format.font-weight input {
+    font-weight: 600;
+}

@@ -1,0 +1,85 @@
+.header-admin-wp {
+    display    : flex;
+    align-items: center;
+    padding    : 10px 0;
+
+    a {
+        text-decoration: none;
+        font-weight    : 700;
+        color          : #333;
+        font-style     : italic;
+        font-size      : 22px;
+
+        &:hover {
+            color: #ee4d2d;
+        }
+    }
+
+    img {
+        width     : 60px;
+        object-fit: cover;
+        height    : 60px;
+    }
+
+    .wp-header {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+    }
+
+    .avatar {
+        position       : relative;
+        cursor         : pointer;
+        padding        : 6px 10px;
+        border-radius  : 10px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        ul {
+            position     : absolute;
+            background   : #fff;
+            list-style   : none;
+            padding      : 10px 20px;
+            box-shadow   : 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            bottom       : -58px;
+            width        : 100%;
+            left         : 0;
+            right        : 0;
+            display      : none;
+
+            li:hover {
+                color: #ee4d2d;
+            }
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+
+            ul {
+                display: block;
+            }
+        }
+    }
+}
+
+.menu {
+    list-style: none;
+    padding   : 0;
+    margin    : 0;
+
+    li {
+        font-size    : 16px;
+        font-weight  : 600;
+        padding      : 6px 10px;
+        border-radius: 6px;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+            color     : #ee4d2d;
+            cursor    : pointer;
+        }
+    }
+}
